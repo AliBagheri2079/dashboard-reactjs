@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx}": ["rome check --apply", "rome format --write"],
+  "*.css": "stylelint --formatter"
+}
