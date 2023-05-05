@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "lint": "rome check src --apply",
+    "lint": "rome check src --apply-unsafe",
     "format": "rome format src --write",
     "style": "stylelint **/*.css",
     "build": "vite build",

@@ -1,4 +1,4 @@
 {
-  "*.{js,jsx}": ["rome check --apply", "rome format --write"],
+  "*.{js,jsx}": ["rome check --apply-unsafe", "rome format --write"],
   "*.css": "stylelint"
 }
