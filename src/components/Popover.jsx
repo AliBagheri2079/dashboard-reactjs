@@ -63,7 +63,7 @@ const PopoverLink = () => {
 											<a
 												key={item.name}
 												href={item.href}
-												className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+												className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-50"
 											>
 												<div className="flex h-10 w-10 shrink-0 items-center justify-center text-blue-500 sm:h-12 sm:w-12">
 													{item.icon}

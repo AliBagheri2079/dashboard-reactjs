@@ -94,7 +94,7 @@ const dollarFormatter = (value) =>
 const numberFormatter = (value) =>
 	`${Intl.NumberFormat("us").format(value).toString()}`;
 
-const Charts = () => {
+const Data = () => {
 	const [selectedKpi, setSelectedKpi] = React.useState("Sales");
 
 	// map formatters by selectedKpi
@@ -173,4 +173,4 @@ const Charts = () => {
 	);
 };
 
-export default Charts;
+export default Data;
