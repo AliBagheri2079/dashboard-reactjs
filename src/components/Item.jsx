@@ -1,5 +1,3 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faImages, fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
@@ -19,8 +17,6 @@ import {
 	styled,
 } from "@nextui-org/react";
 import React from "react";
-
-library.add(fas, faImages);
 
 const theme = createTheme({
 	type: "light", // it could be "light" or "dark"
