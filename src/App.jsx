@@ -1,5 +1,6 @@
 import "./config/fontawesome";
 import Content from "./layout/Content";
+import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
 		<>
 			<Navbar />
 			<Content />
+			<Footer />
 		</>
 	);
 };
