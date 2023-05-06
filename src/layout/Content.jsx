@@ -1,6 +1,6 @@
-import Charts from "../components/Charts";
-import TableData from "../components/TableData";
-import { Card, Grid, Tab, TabList, Text, Title } from "@tremor/react";
+import Data from "../components/Data";
+import Item from "../components/Item";
+import { Tab, TabList, Text, Title } from "@tremor/react";
 import { useState } from "react";
 
 export default function Content() {
@@ -17,19 +17,12 @@ export default function Content() {
 					onValueChange={(value) => setSelectedView(value)}
 					className="mt-6"
 				>
-					<Tab value="1" text="Chart" />
-					<Tab value="2" text="Table" />
+					<Tab value="1" text="Data" />
+					<Tab value="2" text="Item" />
 				</TabList>
 
-				{selectedView === "1" ? <Charts /> : <TableData />}
+				{selectedView === "1" ? <Data /> : <Item />}
 			</div>
 		</main>
 	);
 }
-
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fas, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-// library.add(fas, faInfoCircle);
-// <FontAwesomeIcon icon="fa-solid fa-circle-info" beatFade />
