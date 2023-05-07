@@ -7,13 +7,11 @@ import { mode } from "@chakra-ui/theme-tools";
 	? import { RtlProvider } from '@/components/rtl-provider'
 */
 
-//* Extend the theme to include custom colors, fonts, etc
-const colors = {
-	brand: {
-		900: "#1a365d",
-		800: "#153e75",
-		700: "#2a69ac",
-	},
+//* You choose initial value.
+//* App color mode is detached from system color mode changes.
+const config = {
+	initialColorMode: "dark", // 'dark' | 'light'
+	useSystemColorMode: false,
 };
 
 //* Extend the theme to include custom global css reset styles
@@ -35,7 +33,16 @@ const styles = {
 	}),
 };
 
-const theme = extendTheme({ styles, colors });
+//* Extend the theme to include custom colors, fonts, etc
+const colors = {
+	brand: {
+		900: "#1a365d",
+		800: "#153e75",
+		700: "#2a69ac",
+	},
+};
+
+const theme = extendTheme({ config, styles, colors });
 
 const App = () => {
 	return (
