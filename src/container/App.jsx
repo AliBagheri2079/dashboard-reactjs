@@ -1,3 +1,4 @@
+import HomePage from "../pages/Home";
 import "./App.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
@@ -50,7 +51,9 @@ const App = () => {
 		 * Wrap ChakraProvider at the root of your app
 		 * Pass the `theme` prop to the `ChakraProvider`
 		 */
-		<ChakraProvider theme={theme}>{/* <HomePage /> */}</ChakraProvider>
+		<ChakraProvider theme={theme}>
+			<HomePage />
+		</ChakraProvider>
 	);
 };
 
