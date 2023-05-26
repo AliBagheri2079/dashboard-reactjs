@@ -1,4 +1,4 @@
-# Dashboard React
+# Dashboard React.js
 
 Simple Layout with React, Chakra UI(with Icons), Emotion, Tailwind and Postcss.
 and Create other Simple Layout with Headless UI, Tremor, NextUI, ReactJSS, Font Awesome and Hero Icons.
